@@ -1,1 +1,3 @@
-select distinct fname from Instructor where username="zahorjan"
+select distinct fname 
+from Instructor 
+where username="zahorjan";
