@@ -2,7 +2,10 @@ select
     t.territory,
     count(distinct h.id) as num_hospitals,
     count(distinct c.id) as num_clinics,
-    sum(case when h.has_helipad = true then 1 else 0 end) as num_hospitals_with_helipad
+    sum(case 
+            when h.has_helipad = true then 1 
+            else 0 
+        end) as num_hospitals_with_helipad
 from
     (select territory from hospitals
      union
