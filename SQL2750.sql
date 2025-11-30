@@ -1,7 +1,5 @@
-SELECT 
-    d.gender,
-    COUNT(*) AS total_donations
-FROM Donors d
-JOIN Donations dn 
-        ON d.id = dn.donor_id
-GROUP BY d.gender;
+select d.gender, count(*) as total_donations
+from Donors d
+join Donations dn 
+on d.id = dn.donor_id
+group by d.gender;
