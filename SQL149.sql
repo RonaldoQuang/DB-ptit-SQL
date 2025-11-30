@@ -1,2 +1,2 @@
 select Ho, Ten, DiaChi, year(ngaylamviec)
-from nhanvien;
+from NHANVIEN;
