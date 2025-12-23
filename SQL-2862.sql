@@ -1,5 +1,5 @@
 select b1.Team, b2.Avg_As_Home, b3.Avg_As_Away
-from (select distinct b.Team
+from (select b.Team
       from (select HomeTeam as Team from TeamStats
             union 
             select AwayTeam from TeamStats) as b ) as b1
