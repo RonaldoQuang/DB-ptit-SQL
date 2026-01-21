@@ -1,4 +1,4 @@
-selectp.product_id, round(sum(u.units * p.price) / sum(u.units),2) as average_price
+select p.product_id, round(sum(u.units * p.price) / sum(u.units),2) as average_price
 from prices p
 left join unitssold u
 on p.product_id = u.product_id
